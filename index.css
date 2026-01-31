@@ -31,6 +31,60 @@
 .play_area{
     width:100%;
     height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_btns{
+    width:50%;
+    display: flex;
+    gap:10px;
+}
+
+.game_btns img{
+    width:33.33%;
+    border-radius: 50%;
+    cursor: pointer;
+    border:3px solid transparent;
+}
+
+.game_btns img:hover{
+    box-shadow: 0 0 8px black;
+}
+
+.game_btns img:active{
+    border:3px solid grey;
+}
+
+.scores{
+    width:30%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score_related{
+    width:33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score_related span{
+    font-size: 40px;
+}
+
+.score_related p{
+    font-size: 20px;
+}
+
+.score_related h1{
+    font-size: 30px;
 }
 
 .footer{
