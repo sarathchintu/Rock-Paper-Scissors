@@ -125,7 +125,7 @@
 
 .footer{
     width:100%;
-    height:10vh;
+    min-height:10vh;
     background-color: lightslategrey;
     color: white;
     display: flex;
@@ -158,4 +158,78 @@
 .social_media img:hover{
     width:40px;
     transform: translateY(-10px);
+}
+
+/*for mobile */
+
+@media (max-width: 600px){
+
+.logo{
+    font-size: 25px;
+    font-family: monospace;
+}
+
+  .game_btns {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .game_btns img {
+    width: 40%;
+  }
+
+  .scores {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .score_related span {
+    font-size: 28px;
+  }
+
+  .score_related p {
+    font-size: 16px;
+  }
+
+  .players_choices {
+    width: 90%;
+  }
+
+  .choice_display_area {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .reset {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .social_media img {
+    width: 24px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px){
+
+.game_btns {
+    width: 70%;
+  }
+
+  .scores {
+    width: 60%;
+  }
+
+  .players_choices {
+    width: 70%;
+  }
 }
